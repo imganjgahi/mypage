@@ -1,0 +1,59 @@
+@font-face {
+    font-family: "Shabnam";
+    src: url("assets/fonts/Shabnam-FD.eot");
+    src: url("assets/fonts/Shabnam-FD.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Shabnam-FD.woff") format("woff"), url("assets/fonts/Shabnam-FD.ttf") format("truetype");
+    font-weight: normal;
+}
+
+:root {
+    --primary: #716F81;
+    --secondary: #B97A95;
+    --hover: #F6AE99;
+    --light: #F2E1C1;
+    --dark: #003638;
+    --corners: 8px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+	font-family: 'Shabnam', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background-color: var(--primary);
+	text-align: right;
+	direction: rtl;
+}
+
+nav {
+	background-color: var(--secondary);
+	display: flex;
+	gap: 15px;
+	align-items: center;
+}
+
+.logo {
+	height: 60px;
+}
+
+.menu {
+	list-style: none;
+	display: flex;
+	gap: 15px;
+}
+
+.navLink {
+	text-decoration: none;
+    padding: 5px;
+	color: var(--light);
+    transition: all 300ms;
+    border-bottom: 3px solid transparent;
+}
+
+.navLink:hover {
+    border-radius: var(--corners);
+    background-color: var(--hover);
+    color: var(--dark);
+    border-color: var(--light);
+}
